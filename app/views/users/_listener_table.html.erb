@@ -1,0 +1,16 @@
+<% html_class ||= 'normal' %>
+
+<table class='listener-list list-<%= html_class %>'>
+  <% listeners.each do |listener| %>
+    <tr>
+      <td class='image'><%= link_to image_tag(listener.profile_image_url, :width => 50, :height => 50), "http://twitter.com/#{listener.screen_name}", :target => '_blank' %></td>
+      <td class='screen_name'>
+        <%= link_to "@#{listener.screen_name}", "http://twitter.com/#{listener.screen_name}" %>
+      </td>
+      <td class='count'>
+        <strong><%= listener.count %></strong>
+        <small>Mentions</small>
+      </td>
+    </tr>
+  <% end %>
+</table>

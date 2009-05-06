@@ -14,7 +14,7 @@
          
         <div id='user_bar'>
           <% if logged_in? %>
-            <%= image_tag(current_user.profile_image_url, :width => 24, :height => 24) %> Logged in as <strong>@<%= current_user.login %></strong>. <%= link_to 'Log out', '/logout' %>
+            <%= image_tag(current_user.profile_image_url, :width => 24, :height => 24) %> Logged in as <strong>@<%= current_user.login %></strong>. <%= link_to "My Profile", user_path(current_user) %> | <%= link_to 'Log out', '/logout' %>
           <% else %>
             <%= link_to 'Login via Twitter', '/login' %>
           <% end %>

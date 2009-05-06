@@ -10,6 +10,7 @@ Rails::Initializer.run do |config|
   config.gem 'twitter-auth', :lib => 'twitter_auth'
   config.gem 'oauth', :version => '0.3.2'
   config.gem 'haml', :version => '>= 2.0.6'
+  config.gem 'rufus-scheduler'
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
   # -- all .rb files in that directory are automatically loaded.

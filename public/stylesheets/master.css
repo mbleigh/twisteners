@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #cef;
+  margin: 0;
+  padding: 0;
+  color: #333; }
+
+a {
+  color: #06b;
+  font-weight: bold; }
+
+a.button {
+  background: #057;
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
+  a.button:hover {
+    background: #035; }
+
+.clearfix {
+  clear: both; }
+
+#wrapper {
+  background: white;
+  padding: 1.5em 2em;
+  width: 55em;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  margin: 1em auto 0.5em; }
+
+#footer {
+  text-align: center;
+  font-size: 0.8em;
+  color: #666;
+  padding-bottom: 1.5em; }
+
+#header h1 {
+  float: left;
+  font-size: 3em;
+  margin: 0;
+  padding: 0; }
+  #header h1 a {
+    color: #057;
+    margin-bottom: 0.3em;
+    text-decoration: none; }
+#header #user_bar {
+  float: right;
+  margin-top: 1.2em; }
+  #header #user_bar img {
+    vertical-align: middle; }
+
+p {
+  line-height: 150%; }
+
+div.flash {
+  padding: 4px 8px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 2px solid #ccc; }
+
+div.error {
+  background: #fcc;
+  border-color: #911;
+  color: #311; }
+
+div.notice {
+  background: #cfc;
+  border-color: #191;
+  color: #131; }
+
+a img {
+  border: 0; }
+
+table.listener-list {
+  float: left;
+  margin: 0 50px; }
+  table.listener-list tr:last-child td {
+    border-bottom: 0; }
+  table.listener-list td {
+    border-bottom: 1px dashed #aaa;
+    padding: 10px 0; }
+  table.listener-list td.image {
+    text-align: right; }
+  table.listener-list td.screen_name {
+    font-size: 22px;
+    text-align: center;
+    padding: 10px 15px; }
+    table.listener-list td.screen_name a {
+      color: #333;
+      text-decoration: none; }
+  table.listener-list td.count {
+    font-size: 1.2em; }
+
+table.list-smaller td {
+  padding: 8px 0; }
+table.list-smaller img {
+  width: 28px;
+  height: 28px; }
+table.list-smaller td.screen_name {
+  padding: 8px 15px; }
+  table.list-smaller td.screen_name a {
+    font-size: 18px; }

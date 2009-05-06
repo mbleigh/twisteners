@@ -8,8 +8,21 @@ body
 a
   :color #06b
   :font-weight bold
-  img
-    :border 0
+
+a.button
+  :background #057
+  :display block
+  :color white
+  :text-decoration none
+  :padding 8px 15px
+  :text-align center
+  :font-size 20px
+  :margin-bottom 10px
+  :-moz-border-radius 4px
+  :-webkit-border-radius 4px
+  :border-radius 4px
+  &:hover
+    :background #035
 
 .clearfix
   :clear both
@@ -37,8 +50,8 @@ a
     :padding 0
     a
       :color #057
+      :margin-bottom 0.3em
       :text-decoration none
-    :margin-bottom 0.3em
   #user_bar
     :float right
     :margin-top 1.2em
@@ -54,7 +67,6 @@ div.flash
   :-webkit-border-radius 4px
   :border-radius 4px
   :border 2px solid #ccc
-  :margin 10px 0
 
 div.error
   :background #fcc
@@ -65,3 +77,38 @@ div.notice
   :background #cfc
   :border-color #191
   :color #131
+
+a img
+  :border 0
+
+table.listener-list
+  :float left
+  :margin 0 50px
+  tr:last-child td
+    :border-bottom 0
+  td
+    :border-bottom 1px dashed #aaa
+    :padding 10px 0   
+  td.image
+    :text-align right
+  td.screen_name
+    :font-size 22px
+    :text-align center
+    :padding 10px 15px
+    a
+      :color #333
+      :text-decoration none
+  td.count
+    :font-size 1.2em
+
+table.list-smaller
+  td
+    :padding 8px 0
+  img
+    :width 28px
+    :height 28px
+  td.screen_name
+    :padding 8px 15px
+    a
+      :font-size 18px
+

@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.tweet_my_top '/tweet_my_top', :controller => 'users', :action => 'tweet_my_top', :conditions => {:method => :post}
+  
+  map.resources :users
+  
   map.static '/:action', :controller => 'static'
 
   map.root :controller => 'static', :action => 'index'

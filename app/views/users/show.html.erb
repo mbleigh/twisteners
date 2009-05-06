@@ -1,0 +1,10 @@
+<h1>Who's Listening to <%= user.name %>?</h1>
+
+<p>This is a list of the people who are most often talking about <strong><%= twitter_name(user) %></strong>. <%= link_to "Log in to see your listener count!", login_path unless logged_in? %></p>
+
+<%= link_to "Tweet My Top Listeners", tweet_my_top_path, :class => 'button', :method => :post, :confirm => "This will post a tweet. Continue?"%>
+
+<%= render :partial => 'listener_table', :locals => {:listeners => @listeners[0...10] } %>
+<%= render :partial => "listener_table", :locals => {:listeners => @listeners[10..-1], :html_class => 'smaller'} if @listeners.size > 10 %>
+
+<div class='clearfix'></div>

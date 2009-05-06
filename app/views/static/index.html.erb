@@ -1,12 +1,12 @@
-<h2>Welcome to Your Twitter Application!</h2>
+<h2>Who's Really Listening?</h2>
 
-<p>You have successfully created a Twitter-ready application! To test it out just click on <strong>Login via Twitter</strong> above. You should be taken to Twitter and then back here where it will tell you that you are logged in!</p>
+<p>Tired of those fickle followers, those tempestuous tweeters? Want to know who actually cares, even a little bit, when you post about that delicious sandwich you're eating? Look no further! <strong>Twisteners</strong> shows you who on Twitter is talking about you. Yes, you!</p>
 
-<p>This template doesn't assume anything about how you want to build your application other than that you want to use Twitter authentication to do it, so you can generate any controllers, models, and anything else you like! You can tie it back to Twitter accounts simply by adding associations etc. to <code>app/models/user.rb</code>.</p>
+<p>To get started, simply <%= link_to 'log in', login_path %> using your Twitter credentials. We'll figure out how many times people have talked about you and show you your top twisteners.</p>
 
 <% if @users.any? %>
   <h2>Recently Joined</h2>
   <% for user in @users %>
-    <%= link_to profile_image(user), twitter_profile_url(user), :target => "_blank" %>
+    <%= link_to profile_image(user), user_path(user) %>
   <% end %>
 <% end %>
