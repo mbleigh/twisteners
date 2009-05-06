@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.static '/:action', :controller => 'static'
+
+  map.root :controller => 'static', :action => 'index'
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
