@@ -9,7 +9,7 @@ class User < TwitterAuth::GenericUser
     return update_attributes(:last_processed_at => Time.now) if mentions.empty?
     
     mentions.each do |m|
-      listener = Listener.find_by_screen_name(m['user']['screen_name']) || Listener.create_from_mention(self, m)      
+      listener = user.listeners.find_by_screen_name(m['user']['screen_name']) || Listener.create_from_mention(self, m)      
       listener.increment!(:count)
     end
     
